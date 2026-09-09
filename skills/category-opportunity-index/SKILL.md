@@ -220,11 +220,13 @@ Respond in the language of the seller's request, default pt-BR, with no
 commentary about how the report was produced. The indicators table always
 renders as markdown so it shows cleanly in any client.
 
-The badge and the table labels below are written in pt-BR because that is the
-default. They are a template, not literal strings: when the seller writes in
-another language, translate them and keep the structure, the emoji and the `R$`
-money formatting, which stays the same in every language because the marketplace
-trades in reais.
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
 
 **Opportunity badge** — a heading line naming the marketplace, the category and
 the month the figures cover, for example:

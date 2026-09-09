@@ -188,6 +188,14 @@ an incomplete month.
 Respond in the language of the seller's request (default pt-BR). Name the
 marketplace the figures came from.
 
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
+
 **Snapshot (always):** a markdown table `| Métrica | Valor atual |`, plus —
 where the client can produce files — a downloadable `.csv` / `.xlsx` of the
 same data.

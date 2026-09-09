@@ -177,11 +177,13 @@ Respond in the language of the seller's request, default pt-BR. Present the
 result with no commentary about how it was produced. Lead with a short line
 naming the **marketplace** and the store.
 
-The table headers and field labels below are written in pt-BR because that is
-the default. They are a template, not literal strings: when the seller writes
-in another language, translate them and keep the structure, the emoji and the
-`R$` money formatting, which stays the same in every language because the
-marketplace trades in reais.
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
 
 **Snapshot (always):** a markdown table `| Campo | Valor atual |` for the rows
 below, plus a downloadable `.csv` / `.xlsx` of the same data.

@@ -222,11 +222,13 @@ The ranked table is the **one canonical brand-ranking table defined in Output** 
 the same columns on every surface. It lives in the response text, never inside
 a rendered visual.
 
-The column headers and labels below are written in pt-BR because that is the
-default. They are a template, not literal strings: when the seller writes in
-another language, translate them and keep the structure, the emoji and the `R$`
-money formatting, which stays the same in every language because the
-marketplace trades in reais.
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
 
 - **Standalone ranking:** columns `Posição | Marca | GMV estimado (semana) |
   Vendas est. (semana) | Anúncios | Avaliações | Preço médio` — **no `Variação`
