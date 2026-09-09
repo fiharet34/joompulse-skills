@@ -56,7 +56,11 @@ JoomPulse MCP setup before it can rank a category's sellers.
   are real history. Disclose the estimate caveat in every output.
 - **Read-only.** The skill never writes or modifies anything; it does not store the
   leaderboard — the user keeps the downloadable table and brings it back next period.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **The baseline is user-supplied.** Never claim a movement without a previous
   leaderboard to compare against, and never infer or fabricate one from memory.
 
@@ -96,7 +100,7 @@ leaderboard. The change column header is a word ("Variação"), never a bare "Δ
 
 ## Output
 
-Respond in the seller's language (default pt-BR).
+Respond in the language of the seller's request (default pt-BR).
 
 **Leaderboard (always):** a markdown table, plus a downloadable `.csv` / `.xlsx`:
 

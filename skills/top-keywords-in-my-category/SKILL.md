@@ -49,7 +49,11 @@ JoomPulse MCP setup before it can list a category's keywords.
   counts come from Mercado Livre search trends — say so; do not add the sales
   estimate disclaimer that other skills use.
 - **Read-only.** The skill never writes or modifies anything.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **Keep the workflow invisible.** Show `—` for any missing value; never fabricate.
 
 ## Workflow
@@ -66,9 +70,9 @@ rank and its competing-product count. Sort by rank, best position first.
 
 ## Output
 
-Respond in the seller's language (default pt-BR). The keywords always render as a
-markdown table, sorted by position. The headers below are the pt-BR default and
-may be rendered in the seller's language:
+Respond in the language of the seller's request (default pt-BR). The keywords
+always render as a markdown table, sorted by position. The headers below are
+the pt-BR default and may be rendered in the language of the seller's request:
 
 | Posição | Palavra-chave | Produtos (oferta) |
 |--:|---|--:|

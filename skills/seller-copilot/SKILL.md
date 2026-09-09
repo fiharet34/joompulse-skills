@@ -94,7 +94,8 @@ MCP setup before it can analyse marketplace data.
 - **Not available from JoomPulse:** supplier or landed cost, true unit cost, return and
   refund rates, and traffic or conversion funnels. If the question depends on one of these,
   say so and ask the seller to supply the figure — do not estimate it silently.
-- **Match the seller's language.** One language per answer, no mixing.
+- **Match the language of the seller's request.** One language per answer, no
+  mixing.
 
 ## How to use this skill
 
@@ -323,8 +324,9 @@ be read all at once. Files prefixed `shopee-` are Shopee Brasil; the rest are Me
 - **One-line caption above every table**, saying what it shows — scope, sort order, and
   snapshot date.
 - **Verdict before table**, always.
-- **Portuguese column labels** with the prose in the seller's language: `Vendas estimadas`,
-  `Receita estimada`, `Preço`, `Oportunidade`, `Monopolização`, `Tendência`.
+- **Portuguese column labels** with the prose in the language of the seller's
+  request: `Vendas estimadas`, `Receita estimada`, `Preço`, `Oportunidade`,
+  `Monopolização`, `Tendência`.
 - **Top 10 rows by default** (all, if fewer than 10). When more exist, **state the total
   and offer the rest or a CSV** — never truncate silently. Equally, **never pad a list to
   reach the requested count**: if the seller asked for 10 and the data yields 6, return 6

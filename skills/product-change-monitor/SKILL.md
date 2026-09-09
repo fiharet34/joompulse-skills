@@ -61,7 +61,11 @@ JoomPulse MCP setup before it can monitor a product's changes.
   historical listing data, on Shopee from the marketplace's own rounded sold
   counters refined with review movement. Use the matching disclaimer.
 - **Read-only.** The skill does not sign in as the seller or modify any listing.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **Keep the workflow invisible.** The seller wants the answer, not a play-by-
   play. If one approach does not return data, switch to another quietly; only if
   every approach fails do you say one short, friendly sentence.
@@ -186,8 +190,9 @@ directly — ask for a Mercado Livre, Shopee or JoomPulse link or identifier.
 
 ## Output
 
-Respond in the seller's language. Present the result with no commentary about how
-it was produced. Use plain markdown so it renders cleanly in any client.
+Respond in the language of the seller's request. Present the result with no
+commentary about how it was produced. Use plain markdown so it renders cleanly
+in any client.
 
 Lead with a short line naming the **marketplace** that was monitored.
 
@@ -231,13 +236,14 @@ columns:
   equivalent**: either drop these columns or show `—` in them. Never map a shop
   tier onto a seller medal
 
-Do **not** put a delta symbol or "(Δ)" in any column header — it confuses sellers;
-the change belongs inside the cell. Below the table, state the period actually
-compared (for example "today versus seven days ago"). On Mercado Livre also
-surface any baseline date that was not exactly the target, so the comparison is
-transparent; on Shopee, when the carried-forward record is older than the target
-day, give its date and say the value simply had not changed since. You may
-translate the column headers into the seller's language.
+Do **not** put a delta symbol or "(Δ)" in any column header — it confuses
+sellers; the change belongs inside the cell. Below the table, state the period
+actually compared (for example "today versus seven days ago"). On Mercado Livre
+also surface any baseline date that was not exactly the target, so the
+comparison is transparent; on Shopee, when the carried-forward record is older
+than the target day, give its date and say the value simply had not changed
+since. You may translate the column headers into the language of the seller's
+request.
 
 **Disclaimer (every report) — use the variant for the marketplace you queried.**
 

@@ -59,7 +59,11 @@ JoomPulse MCP setup before it can find opportunities.
   historical listing data, on Shopee from the marketplace's own rounded sold
   counters refined with review movement. Use the matching disclaimer.
 - **Read-only.** The skill does not sign in as the seller or modify any listing.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **Keep the workflow invisible.** The seller wants the answer, not a play-by-
   play. If one approach does not return data, switch to another quietly; only if
   every approach fails do you say one short, friendly sentence.
@@ -159,9 +163,9 @@ needs. Pull a generous set so the filters have room to work.
 
 ## Output
 
-Respond in the seller's language. Present the result with no commentary about how
-it was produced. The product table always renders as markdown so it displays
-cleanly in any client.
+Respond in the language of the seller's request. Present the result with no
+commentary about how it was produced. The product table always renders as
+markdown so it displays cleanly in any client.
 
 Lead with a short intro line naming the **marketplace**, the category and the
 rating threshold actually applied.

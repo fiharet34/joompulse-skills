@@ -19,9 +19,10 @@ description: >
 # Mercado Livre — My Product vs. Catalog (Buy-Box Competitiveness)
 
 This skill compares the seller's **own** Mercado Livre (Brasil) listing against
-**the available competing listings of the same catalog product** — the sellers competing
-for the same buy-box — and tells the seller, in pt-BR, where they win, where they
-lose, and **what to fix first** to win the buy-box and convert more.
+**the available competing listings of the same catalog product** — the sellers
+competing for the same buy-box — and tells the seller, in the language of their
+request, where they win, where they lose, and **what to fix first** to win the
+buy-box and convert more.
 
 Given a product by a Mercado Livre link, a JoomPulse link, a Mercado Livre listing
 identifier, or a catalog product identifier, it identifies the seller's listing and
@@ -63,7 +64,11 @@ JoomPulse MCP setup before it can compare a listing against its catalog.
   review count, logistics, and seller attributes are real Mercado Livre data — say
   so, it is a strength of the report.
 - **Read-only.** The skill does not sign in as the seller or modify any listing.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **Keep the workflow invisible.** The seller wants the answer, not a play-by-play.
   If one lookup returns nothing, switch approaches quietly; only if everything fails
   do you say one short, friendly sentence.
@@ -116,7 +121,14 @@ Each parameter gets one status, with a colour marker so it reads at a glance:
 
 ## Output
 
-Respond in pt-BR, leading with the verdict:
+Respond in the language of the seller's request, default pt-BR, leading with
+the verdict:
+
+The section headings and labels below are written in pt-BR because that is the
+default. They are a template, not literal strings: when the seller writes in
+another language, translate them and keep the structure, the emoji and the `R$`
+money formatting, which stays the same in every language because the
+marketplace trades in reais.
 
 1. **Veredito** — two to four sentences: where the seller wins, where they lose,
    their buy-box position, and the single top priority.

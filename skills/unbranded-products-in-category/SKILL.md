@@ -60,7 +60,11 @@ JoomPulse MCP setup before it can find unbranded products.
   disclaimer.
 - **Read-only.** The skill never writes or modifies anything, and does not render
   product images.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **Keep the workflow invisible.** Show `—` for any missing value; never fabricate.
 
 **Shopee data — what differs from Mercado Livre**
@@ -140,10 +144,10 @@ strongest ~20–30.
 
 ## Output
 
-Respond in the seller's language (default pt-BR). Lead with a one-line summary (the
-**marketplace**, the category and how many unbranded products were found), sort by
-estimated demand, and end with the disclaimer. The product list always renders as a
-markdown table.
+Respond in the language of the seller's request (default pt-BR). Lead with a
+one-line summary (the **marketplace**, the category and how many unbranded
+products were found), sort by estimated demand, and end with the disclaimer.
+The product list always renders as a markdown table.
 
 **Product table (Mercado Livre):**
 

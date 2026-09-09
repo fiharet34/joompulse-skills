@@ -62,7 +62,11 @@ JoomPulse MCP setup before it can find growing niches.
   own rounded sold counters refined with review movement. Use the matching
   disclaimer.
 - **Read-only.** The skill never writes or modifies anything.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **Keep the workflow invisible.** Surface the answer, not the steps. Never fill
   gaps from general knowledge; show `—` for any missing value.
 
@@ -155,11 +159,12 @@ the most recent month with the one before it and read nothing longer-run into it
 
 ## Output
 
-Respond in the seller's language (default pt-BR), with no commentary about how the
-result was produced. Lead with a short line naming the **marketplace**, the parent
-category, the **level the ranking is at**, and the month the figures describe. On
-Shopee that line also says plainly that niches deeper than the third level are
-folded into their level-3 ancestor and cannot be separated here.
+Respond in the language of the seller's request (default pt-BR), with no
+commentary about how the result was produced. Lead with a short line naming the
+**marketplace**, the parent category, the **level the ranking is at**, and the
+month the figures describe. On Shopee that line also says plainly that niches
+deeper than the third level are folded into their level-3 ancestor and cannot
+be separated here.
 
 The ranking always renders as a markdown table:
 
