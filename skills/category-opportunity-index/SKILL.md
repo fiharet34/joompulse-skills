@@ -173,7 +173,7 @@ Do not draw a trend and do not pass three points off as one: state plainly that 
 long-run trend is not available for Shopee yet, and report the snapshot plus the
 month-over-month change instead.
 
-### Step 4 — Build the report (pt-BR)
+### Step 4 — Build the report
 
 1. Lead with the **opportunity index**, prominently: 🟢 alto / 🟡 médio / 🔴
    baixo (show `—` if it is missing), noting the marketplace, the category name
@@ -207,6 +207,12 @@ Respond in the seller's language, default pt-BR, with no commentary about how th
 report was produced. The indicators table always renders as markdown so it shows
 cleanly in any client.
 
+The badge and the table labels below are written in pt-BR because that is the
+default. They are a template, not literal strings: when the seller writes in
+another language, translate them and keep the structure, the emoji and the `R$`
+money formatting, which stays the same in every language because the marketplace
+trades in reais.
+
 **Opportunity badge** — a heading line naming the marketplace, the category and
 the month the figures cover, for example:
 
@@ -236,6 +242,9 @@ cells show `—`.
 **Resumo** — the 2–4 sentence interpretation described in the workflow.
 
 **Disclaimer (every report) — use the variant for the marketplace you queried.**
+Each variant below carries the pt-BR wording and the English wording separated by
+` / `. Emit only the half that matches the seller's language — never both halves and
+never the slash.
 
 Mercado Livre:
 
