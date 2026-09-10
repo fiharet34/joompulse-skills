@@ -95,7 +95,9 @@ MCP setup before it can analyse marketplace data.
   refund rates, and traffic or conversion funnels. If the question depends on one of these,
   say so and ask the seller to supply the figure — do not estimate it silently.
 - **Match the language of the seller's request.** One language per answer, no
-  mixing.
+  mixing, and never infer the language from the store or its listings — those are
+  Brazilian whatever language the seller writes in. When the request is in English,
+  no Portuguese is left anywhere in the answer.
 
 ## How to use this skill
 
