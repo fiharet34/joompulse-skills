@@ -345,6 +345,14 @@ be read all at once. Files prefixed `shopee-` are Shopee Brasil; the rest are Me
   **lower means you are ahead**, and that it is relative to the competitor set rather than
   an absolute grade.
 
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
+
 ## Notes and guardrails
 
 - **Never fabricate a number.** If the data is not there, say so.

@@ -166,6 +166,14 @@ month the figures describe. On Shopee that line also says plainly that niches
 deeper than the third level are folded into their level-3 ancestor and cannot
 be separated here.
 
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
+
 The ranking always renders as a markdown table:
 
 | Categoria | Qtd. vendedores | Receita (mês est.) | Vendas (mês est.) | Produtos |

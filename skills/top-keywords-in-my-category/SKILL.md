@@ -71,8 +71,15 @@ rank and its competing-product count. Sort by rank, best position first.
 ## Output
 
 Respond in the language of the seller's request (default pt-BR). The keywords
-always render as a markdown table, sorted by position. The headers below are
-the pt-BR default and may be rendered in the language of the seller's request:
+always render as a markdown table, sorted by position.
+
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
 
 | Posição | Palavra-chave | Produtos (oferta) |
 |--:|---|--:|
