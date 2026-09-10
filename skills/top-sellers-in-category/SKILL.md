@@ -115,10 +115,15 @@ Portuguese is left anywhere in the answer.
 **Leaderboard (always):** a markdown table, plus — where the client can produce
 files — a downloadable `.csv` / `.xlsx`:
 
-| Vendedor | Vendas méd. (mês) | Receita média (mês) | Vendas 365d | Cancel rate | Sales trend | Marcas | Produtos (todos) | Produtos (com venda) | Envio internacional | Classic | Premium |
+| Vendedor | Vendas méd. (mês) | Receita média (mês) | Vendas 365d (loja toda) | Cancelamento (loja toda) | Sales trend | Marcas | Produtos (todos) | Produtos (com venda) | Envio internacional | Classic | Premium |
 |---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 
 - The **Vendedor** name links to the seller's JoomPulse page.
+- Every other column is the seller's figure **inside this category**, except
+  **Vendas 365d** and **Cancelamento**, which the source only measures across the
+  seller's whole store. Those two keep "loja toda" in the header in every language,
+  translated along with the rest: without it a reader compares a monthly category
+  figure against a yearly store-wide one and concludes the category collapsed.
 
 **Comparison (only when a previous leaderboard is supplied):** the same table plus
 a **Variação** column, and a **Destaques** block (maiores altas / maiores quedas).
@@ -127,7 +132,8 @@ a **Variação** column, and a **Destaques** block (maiores altas / maiores qued
 
 > ⚠️ Vendas e receita são estimativas do JoomPulse com base no histórico de
 > anúncios — não são transações reais. Taxa de cancelamento e vendas dos últimos
-> 365 dias são dados reais do Mercado Livre.
+> 365 dias são dados reais do Mercado Livre e referem-se à loja inteira, não
+> apenas a esta categoria.
 
 ## Visualization
 

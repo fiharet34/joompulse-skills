@@ -81,16 +81,22 @@ the emoji and the `R$` money formatting, which stays the same in every language
 because the marketplace trades in reais. When the request is in English, no
 Portuguese is left anywhere in the answer.
 
-| Posição | Palavra-chave | Produtos (oferta) |
-|--:|---|--:|
+| Posição | Palavra-chave |
+|--:|---|
 
-- **Posição** — the keyword's rank in the category's search trends.
-- **Produtos (oferta)** — the number of active offers (listings) matching that
-  keyword, i.e. how many products currently compete for it. This is a real
-  search-trend count, not an estimate.
+- **Posição** — the keyword's rank inside the trend group being shown, counted
+  from 1. Read it from the per-group rank, not from a rank that runs across all
+  the groups a category has, or the first search term appears to rank sixth.
 
-Close with a short, optional takeaway (use the top terms in titles and ads; a high
-competing-product count means a crowded term, a low one a more open opportunity).
+There is no count of how many listings compete for a keyword, and no search
+volume, traffic, impressions, click-through rate or competition score either.
+The source marks the one field that looks like a competing-product count as
+unreliable and not to be surfaced. Do not add a column for any of them, do not
+leave an empty one in the table, and do not estimate them from anything else.
+
+Close with a short, optional takeaway — which terms to carry in titles and ads,
+and what the shape of the list suggests about demand. Say nothing about how
+crowded a term is: nothing in this data measures that.
 
 This is **real Mercado Livre search-trend data, not an estimate** — state that
 once, in place of the estimate disclaimer.

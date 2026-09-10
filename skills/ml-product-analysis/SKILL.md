@@ -239,7 +239,10 @@ Both the keyword and photo paths feed the same analog pipeline:
    catalogue or buy-box fields at all**.
 5. **Rank.** Score each candidate by a blend of similarity to the subject,
    demand (estimated revenue), and how crowded the listing is, then sort by that
-   score. Drop candidates with no sales. Present a single ranked list — do not
+   score. Say in one clause what the order is, because "demand" here means
+   estimated revenue and the estimated-sales column will not descend with it: a
+   reader who is not told assumes the table is sorted by the units column they
+   can see. Drop candidates with no sales. Present a single ranked list — do not
    split analogs into thematic sub-tables. On Shopee, never rank on a difference
    of a few units: the sold counters are rounded, so small gaps are noise.
 
@@ -288,8 +291,10 @@ Shopee equivalent either: omit them or show `—`, never a "Não".
 **Analogs table (Mercado Livre)** — one row per comparable product, with the
 product name, brand, price (current and historic minimum), estimated monthly
 sales and revenue, logistics, catalog / buy-box status, number of sellers, review
-rating, and a links column holding the Mercado Livre and JoomPulse links. Keep
-both links for every product.
+rating, and a links column holding the Mercado Livre and JoomPulse links. Every
+row carries both: a row without them is incomplete, and a table whose subject
+card has links while its rows do not is the specific failure to avoid, because
+the seller cannot open a single competitor the table names.
 
 **Analogs table (Shopee)** — one row per comparable item, with the item name,
 brand, price (current and the lowest since May 2026), estimated sales and revenue

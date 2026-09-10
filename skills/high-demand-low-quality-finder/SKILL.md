@@ -159,7 +159,12 @@ needs. Pull a generous set so the filters have room to work.
   revenue as a tiebreaker), estimated 30-day sales on Shopee (30-day revenue as a
   tiebreaker). The ranking figure must appear as its own column in the table —
   never rank on a number the table does not show.
-- Keep roughly the top 20–30 rows for the table.
+- Keep the top 12 rows for the table, and say how many matched in total so the
+  seller knows what was left out. This row carries fifteen columns and a link,
+  so it is long: at 25 rows the answer runs past what a host will emit and the
+  table is cut mid-row, losing the disclaimer with it. Twelve of the strongest
+  opportunities is more than anyone acts on in one sitting. If the seller asks
+  for more, give the next twelve rather than the whole list at once.
 
 ## Output
 

@@ -184,6 +184,14 @@ numbers.
    Do not merely drop the incumbent-held listings from a sub-category that still
    has one — that sub-category is contested and its other listings are not
    uncontested.
+
+   Run this check as its own query over **every** listing in the sub-category,
+   with no sales filter and no row cap in force. A set you have already narrowed
+   to listings with sales does not answer the question: an incumbent that sold
+   nothing last week is still active in the niche, and checking the narrowed set
+   is how a category with a dormant platinum seller gets reported as uncontested.
+   For each sub-category you call uncontested, say how many listings the check
+   covered; if you cannot state that number, you have not run the check.
 3. From the uncontested sub-categories, keep the listings that are real, funded
    niches — those with estimated sales above zero — and rank them so the
    strongest uncontested opportunities lead: by estimated **weekly** revenue on
@@ -268,10 +276,11 @@ heading.
 
 Put the marketplace link on the product identifier in each row. When a cell is
 empty, show `—` rather than guessing. Below the table, briefly state what
-"uncontested niche" means here: sub-categories deeper than the third level that
-have **no platinum seller at all** among their listings on Mercado Livre, or
-**no Official store (Shopee Mall) seller at all** on Shopee. You may translate
-the column headers into the language of the seller's request.
+"uncontested niche" means here: sub-categories deeper than the third level with
+**no platinum seller active among their listings at all** on Mercado Livre, or
+**no Official store (Shopee Mall) seller at all** on Shopee — counted across
+every listing in the sub-category, including those with no sales. You may
+translate the column headers into the language of the seller's request.
 
 **On Shopee, state this next to the verdict itself, not only in the guardrails:**
 only items with at least one lifetime sale are tracked, so an Official store
