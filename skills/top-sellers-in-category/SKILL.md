@@ -5,7 +5,7 @@ description: >
   revenue via JoomPulse, and returns a downloadable leaderboard — per seller: estimated
   monthly sales and revenue, 365-day completed sales, cancellation rate, month-over-month
   sales growth, medal, brands, product counts, international shipping, and listing-type
-  counts, with a JoomPulse link each.
+  counts.
   It can also track how the ranking moved: supply a previous-period leaderboard for the same
   category and it shows each seller's movement (rose / fell / new) plus the biggest movers.
   Triggers: "top sellers in this category", "biggest stores in a category", "rank sellers by
@@ -58,7 +58,11 @@ JoomPulse MCP setup before it can rank a category's sellers.
   figures to sanity-check the estimated ones**, never the other way round.
 - **Read-only.** The skill never writes or modifies anything; it does not store the
   leaderboard — the user keeps the downloadable table and brings it back next period.
-- **Language:** detect the seller's language and respond in it. Default to pt-BR.
+- **Language:** write in the language of the message you are answering, and
+  default to pt-BR only when that is unclear. Never infer the language from the
+  store, its listings or the marketplace — those are Brazilian whatever
+  language the seller writes in, so a seller who asks in English gets the whole
+  report in English.
 - **The baseline is user-supplied.** Never claim a movement without a previous
   leaderboard to compare against, and never infer or fabricate one from memory.
 
@@ -133,7 +137,15 @@ leaderboard. The change column header is a word ("Variação"), never a bare "Δ
 
 ## Output
 
-Respond in the seller's language (default pt-BR).
+Respond in the language of the seller's request (default pt-BR).
+
+The column headers, labels and disclaimers below are written in pt-BR because
+that is the default. They are a template, not literal strings: when the seller
+writes in another language, translate all of them — the headers, row values
+such as `sim` / `não` / `ouro`, and the disclaimer — and keep the structure,
+the emoji and the `R$` money formatting, which stays the same in every language
+because the marketplace trades in reais. When the request is in English, no
+Portuguese is left anywhere in the answer.
 
 **Leaderboard (always):** a markdown table, plus — where the client can produce
 files — a downloadable `.csv` / `.xlsx`:
@@ -141,8 +153,18 @@ files — a downloadable `.csv` / `.xlsx`:
 | Vendedor | Medalha | Vendas méd. (mês) | Receita média (mês) | Vendas 365d (loja toda) | Cancelamento (loja toda) | Crescimento mensal (loja toda) | Marcas | Produtos (todos) | Produtos (com venda) | Envio internacional (loja toda) | Clássico (loja toda) | Premium (loja toda) |
 |---|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 
-- The **Vendedor** name links to the seller's JoomPulse page. Headers are pt-BR by
-  default; translate them only when the seller writes in another language.
+- **Every seller you rank is a row of that table.** If the surface is too narrow,
+  drop columns from the right — listing types first, then international shipping,
+  then brands — and say which you dropped; the downloadable file always keeps all
+  of them. Never move sellers into a numbered list, a paragraph, or a trailing
+  "and below them, X, Y, Z" sentence, and never carry only the leaders in the table
+  with the rest in prose. The user saves this table and pastes it back next period,
+  and a list cannot be compared row against row. **If the sellers you ranked are
+  not all rows of one markdown table, you have not produced the leaderboard.**
+- **The Vendedor name is plain text.** Sellers have no JoomPulse page -- the
+  dashboard link template is for listing ids only -- so a URL built from a shopId
+  404s. Headers are pt-BR by default; translate them only when the seller writes
+  in another language.
 - **Full precision in the money columns** — `R$ 1.279.436,00`, never `R$ 1,28 mi`.
   This is a ranking: rounding collapses the rows into each other, and a tail of
   `R$ 0,7x mi` values cannot be ordered or audited by the reader. If the table is
@@ -159,11 +181,6 @@ files — a downloadable `.csv` / `.xlsx`:
   cancellation rate, growth, international shipping and the listing-type counts are
   the whole store. That is why the listing-type counts do not add up to the category
   product count, and it needs saying every time, not just when it looks odd.
-- **If the table is too wide for the surface, drop columns from the right** —
-  listing types first, then international shipping, then brands — and say which were
-  dropped; the downloadable file always keeps all of them. **Never abandon the table
-  for a seller-by-seller list**: the whole point is that the user saves it and pastes
-  it back next period, and a list cannot be compared row against row.
 
 **Comparison (only when a previous leaderboard is supplied):** the same table plus
 a **Variação** column, and a **Destaques** block (maiores altas / maiores quedas).
