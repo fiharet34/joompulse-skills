@@ -76,9 +76,11 @@ as a cap — show fewer if fewer exist.
 ### Step 3 — Present today's leaderboard and offer it for download
 
 Render the leaderboard for **today** (head it with the category name and the date).
-This table is the deliverable — and **offer it as a downloadable file (`.csv` /
-`.xlsx`)** so the user can save it and bring it back next period as the baseline.
-On a standalone leaderboard there is **no movement column and no legend**.
+This table is the deliverable. **Where the client can produce files, also offer
+it as a downloadable `.csv` / `.xlsx`** so the user can save it and bring it
+back next period as the baseline; where it cannot, the markdown table stands on
+its own — never offer a download you cannot deliver. On a standalone
+leaderboard there is **no movement column and no legend**.
 
 ### Step 4 — Offer comparison, and compare if a previous leaderboard is supplied
 
@@ -98,7 +100,8 @@ leaderboard. The change column header is a word ("Variação"), never a bare "Δ
 
 Respond in the seller's language (default pt-BR).
 
-**Leaderboard (always):** a markdown table, plus a downloadable `.csv` / `.xlsx`:
+**Leaderboard (always):** a markdown table, plus — where the client can produce
+files — a downloadable `.csv` / `.xlsx`:
 
 | Vendedor | Vendas méd. (mês) | Receita média (mês) | Vendas 365d | Cancel rate | Sales trend | Marcas | Produtos (todos) | Produtos (com venda) | Envio internacional | Classic | Premium |
 |---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
