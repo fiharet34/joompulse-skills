@@ -5,7 +5,7 @@ description: >
   revenue via JoomPulse, and returns a downloadable leaderboard — per seller: estimated
   monthly sales and revenue, 365-day completed sales, cancellation rate, month-over-month
   sales growth, medal, brands, product counts, international shipping, and listing-type
-  counts, with a JoomPulse link each.
+  counts.
   It can also track how the ranking moved: supply a previous-period leaderboard for the same
   category and it shows each seller's movement (rose / fell / new) plus the biggest movers.
   Triggers: "top sellers in this category", "biggest stores in a category", "rank sellers by
@@ -137,8 +137,10 @@ Respond in the seller's language (default pt-BR).
 | Vendedor | Medalha | Vendas méd. (mês) | Receita média (mês) | Vendas 365d | Taxa de cancelamento | Crescimento mensal | Marcas | Produtos (todos) | Produtos (com venda) | Envio internacional | Clássico | Premium |
 |---|:--|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 
-- The **Vendedor** name links to the seller's JoomPulse page. Headers are pt-BR by
-  default; translate them only when the seller writes in another language.
+- **The Vendedor name is plain text.** Sellers have no JoomPulse page — the
+  dashboard link template is for listing ids only — so a URL built from a shopId
+  404s. Headers are pt-BR by default; translate them only when the seller writes
+  in another language.
 - **Full precision in the money columns** — `R$ 1.279.436,00`, never `R$ 1,28 mi`.
   This is a ranking: rounding collapses the rows into each other, and a tail of
   `R$ 0,7x mi` values cannot be ordered or audited by the reader. If the table is
