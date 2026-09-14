@@ -157,9 +157,12 @@ Respond in the seller's language (default pt-BR).
   product count, and it needs saying every time, not just when it looks odd.
 - **If the table is too wide for the surface, drop columns from the right** —
   listing types first, then international shipping, then brands — and say which were
-  dropped; the downloadable file always keeps all of them. **Never abandon the table
-  for a seller-by-seller list**: the whole point is that the user saves it and pastes
-  it back next period, and a list cannot be compared row against row.
+  dropped; the downloadable file always keeps all of them. Never move sellers into a
+  numbered list, a paragraph, or a trailing "and below them, X, Y, Z" sentence, and
+  never carry only the leaders in the table with the rest in prose. The user saves this
+  table and pastes it back next period, and a list cannot be compared row against row.
+  **If the sellers you ranked are not all rows of one markdown table, you have not
+  produced the leaderboard.**
 
 **Comparison (only when a previous leaderboard is supplied):** the same table plus
 a **Variação** column, and a **Destaques** block (maiores altas / maiores quedas).
