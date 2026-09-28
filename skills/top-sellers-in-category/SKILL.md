@@ -4,7 +4,7 @@ description: >
   Ranks the top sellers in one Mercado Livre (Brasil) category by estimated average monthly
   revenue via JoomPulse, and returns a downloadable leaderboard — per seller: estimated
   monthly sales and revenue, 365-day completed sales, cancellation rate, sales trend, brands,
-  product counts, international shipping, and listing-type counts, with a JoomPulse link each.
+  product counts, international shipping, and listing-type counts.
   It can also track how the ranking moved: supply a previous-period leaderboard for the same
   category and it shows each seller's movement (rose / fell / new) plus the biggest movers.
   Triggers: "top sellers in this category", "biggest stores in a category", "rank sellers by
@@ -103,7 +103,9 @@ Respond in the seller's language (default pt-BR).
 | Vendedor | Vendas méd. (mês) | Receita média (mês) | Vendas 365d | Cancel rate | Sales trend | Marcas | Produtos (todos) | Produtos (com venda) | Envio internacional | Classic | Premium |
 |---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
 
-- The **Vendedor** name links to the seller's JoomPulse page.
+- **The Vendedor name is plain text.** Sellers have no JoomPulse page — the
+  dashboard link template is for listing ids only — so a URL built from a shopId
+  404s.
 
 **Comparison (only when a previous leaderboard is supplied):** the same table plus
 a **Variação** column, and a **Destaques** block (maiores altas / maiores quedas).
